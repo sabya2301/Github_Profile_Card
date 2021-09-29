@@ -9,6 +9,7 @@ form.addEventListener("submit", e => {
     console.log(userName);
     if (userName) callApi(userName);
     else card.innerHTML = `<p>Type a valid username</p>`
+    return false;
 });
 
 
