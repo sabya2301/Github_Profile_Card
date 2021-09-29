@@ -4,6 +4,7 @@ const inp = document.querySelector("#search");
 // let repos;
 
 form.addEventListener("submit", e => {
+    e.preventDefault();
     const userName = inp.value;
     console.log(userName);
     if (userName) callApi(userName);
